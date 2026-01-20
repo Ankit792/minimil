@@ -14,3 +14,6 @@ manifest:
 
   self:
     path: minimil
+# west build -p always -b alif_b1_dk/ab1c1f4m51820hh0/rtss_he samples/hello_world
+# west build -b minimil_b1/rtss_he samples/hello_world
+# west build -p always -b minimil_b1/rtss_he minimil/samples/hello_world
