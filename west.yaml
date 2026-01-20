@@ -1,0 +1,25 @@
+manifest:
+  version: "0.13"
+
+  remotes:
+    - name: alif
+      url-base: https://github.com/alifsemi
+    - name: minimil
+      url-base: https://github.com/Ankit792
+
+  projects:
+    # 1️ Fetch Alif SDK (PIN THIS)
+    - name: alif
+      url: https://github.com/alifsemi/sdk-alif.git
+      revision: 9951f106e882be7cdc840bec6cc4e07dbd005918
+      path: alif
+      import: true
+
+    # 2️ Optional: minimil extra libs
+    - name: minimil-utils
+      url: https://github.com/Ankit792/minimil.git
+      revision: main
+      path: modules/lib/minimil-utils
+
+  self:
+    path: minimil
