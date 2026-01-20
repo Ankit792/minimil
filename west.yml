@@ -11,7 +11,7 @@ manifest:
     # 1️ Fetch Alif SDK (PIN THIS)
     - name: alif
       url: https://github.com/alifsemi/sdk-alif.git
-      revision: 9951f106e882be7cdc840bec6cc4e07dbd005918
+      revision: 0bb7d893537235fd7eb3dcb03ab8a923b1052884
       path: alif
       import: true
 
