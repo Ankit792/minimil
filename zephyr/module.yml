@@ -1,7 +1,4 @@
 build:
-  cmake-ext: true
-  kconfig-ext: true
   settings:
     board_root: .
     dts_root: .
-    soc_root: .
