@@ -1,27 +1,221 @@
-(.venv) PS D:\Ankit\above\test2> west list
-manifest     minimil                      HEAD                                     N/A
-alif         alif                         0bb7d893537235fd7eb3dcb03ab8a923b1052884 https://github.com/alifsemi/sdk-alif.git
-zephyr       zephyr                       9951f106e882be7cdc840bec6cc4e07dbd005918 https://github.com/alifsemi/zephyr_alif
-matter       modules/lib/matter           main                                     https://github.com/alifsemi/matter_alif
-mcuboot_alif bootloader/mcuboot           346f7374ff4467e40b5594658f8ac67a5e9813c9 https://github.com/alifsemi/mcuboot_alif
-cmsis_alif   modules/hal/cmsis            85f6b92af0f6ac72594d391f895c45cc30847e41 https://github.com/alifsemi/cmsis_alif
-dave2d       modules/drivers/dave2d       6bce53ec2563a72990b2b8bf3be08e8abdec5fd8 https://github.com/alifsemi/alif_dave2d-driver
-aipl         modules/lib/aipl             1353536b04b2b6e6262e6044cfc6c75dbb7916d6 https://github.com/alifsemi/alif_image-processing-lib
-cmsis-dsp    modules/lib/cmsis-dsp        d80a49b2bb186317dc1db4ac88da49c0ab77e6e7 https://github.com/zephyrproject-rtos/cmsis-dsp
-edtt         tools/edtt                   b9ca3c7030518f07b7937dacf970d37a47865a76 https://github.com/zephyrproject-rtos/edtt
-fatfs        modules/fs/fatfs             16245c7c41d2b79e74984f49b5202551786b8a9b https://github.com/zephyrproject-rtos/fatfs
-hal_alif     modules/hal/alif             bc6c3b1118e95105178c3048aebdcc7221179b45 https://github.com/alifsemi/hal_alif
-hal_ethos_u  modules/hal/ethos_u          50ddffca1cc700112f25ad9bc077915a0355ee5d https://github.com/zephyrproject-rtos/hal_ethos_u
-liblc3       modules/lib/liblc3           48bbd3eacd36e99a57317a0a4867002e0b09e183 https://github.com/zephyrproject-rtos/liblc3
-libmetal     modules/hal/libmetal         3e8781aae9d7285203118c05bc01d4eb0ca565a7 https://github.com/zephyrproject-rtos/libmetal
-littlefs     modules/fs/littlefs          ed0531d59ee37f5fb2762bcf2fc8ba4efaf82656 https://github.com/zephyrproject-rtos/littlefs
-lvgl         modules/lib/gui/lvgl         1ed1ddd881c3784049a92bb9fe37c38c6c74d998 https://github.com/zephyrproject-rtos/lvgl
-mbedtls      modules/crypto/mbedtls       4952e1328529ee549d412b498ea71c54f30aa3b1 https://github.com/zephyrproject-rtos/mbedtls
-mipi-sys-t   modules/debug/mipi-sys-t     33e5c23cbedda5ba12dbe50c4baefb362a791001 https://github.com/zephyrproject-rtos/mipi-sys-t
-net-tools    tools/net-tools              93acc8bac4661e74e695eb1aea94c7c5262db2e2 https://github.com/zephyrproject-rtos/net-tools
-openthread   modules/lib/openthread       3ae741f95e7dfb391dec35c48742862049eb62e8 https://github.com/zephyrproject-rtos/openthread
-picolibc     modules/lib/picolibc         82d62ed1ac55b4e34a12d0390aced2dc9af13fc9 https://github.com/zephyrproject-rtos/picolibc
-segger       modules/debug/segger         cf56b1d9c80f81a26e2ac5727c9cf177116a4692 https://github.com/zephyrproject-rtos/segger
-tinycrypt    modules/crypto/tinycrypt     1012a3ebee18c15ede5efc8332ee2fc37817670f https://github.com/zephyrproject-rtos/tinycrypt
-uoscore-uedhoc modules/lib/uoscore-uedhoc   54abc109c9c0adfd53c70077744c14e454f04f4a https://github.com/zephyrproject-rtos/uoscore-uedhoc
-zcbor        modules/lib/zcbor            9b07780aca6fb21f82a241ba386ad9b379809337 https://github.com/zephyrproject-rtos/zcbor
+(.venv) PS D:\Ankit\above\test2> west build -p always -b minimil_b1_dk/ab1c1f4m51820hh0/rtss_he minimil/samples/lc3/lc3_codec
+-- west build: making build dir D:\Ankit\above\test2\build pristine
+-- west build: generating a build system
+Loading Zephyr default modules (Zephyr base).
+-- Application: D:/Ankit/above/test2/minimil/samples/lc3/lc3_codec
+-- CMake version: 4.1.0
+-- Found Python3: C:/Users/ankit/zephyrproject/.venv/Scripts/python.exe (found suitable version "3.13.7", minimum required is "3.10") found components: Interpreter
+-- Cache files will be written to: D:/Ankit/above/test2/zephyr/.cache
+-- Zephyr version: 4.1.0 (D:/Ankit/above/test2/zephyr)
+-- Found west (found suitable version "1.5.0", minimum required is "0.14.0")
+-- Board: minimil_b1_dk, qualifiers: ab1c1f4m51820hh0/rtss_he
+-- ZEPHYR_TOOLCHAIN_VARIANT not set, trying to locate Zephyr SDK
+-- Found host-tools: zephyr 0.17.0 (C:/Users/ankit/zephyr-sdk-0.17.0)
+-- Found toolchain: zephyr 0.17.0 (C:/Users/ankit/zephyr-sdk-0.17.0)
+-- Found Dtc: C:/ProgramData/chocolatey/bin/dtc.exe (found suitable version "1.6.1", minimum required is "1.4.6")
+-- Found BOARD.dts: D:/Ankit/above/test2/minimil/boards/minimil/minimil_b1_dk/minimil_b1_dk_ab1c1f4m51820hh0_rtss_he.dts
+-- Generated zephyr.dts: D:/Ankit/above/test2/build/zephyr/zephyr.dts
+-- Generated pickled edt: D:/Ankit/above/test2/build/zephyr/edt.pickle
+-- Generated devicetree_generated.h: D:/Ankit/above/test2/build/zephyr/include/generated/zephyr/devicetree_generated.h
+-- Including generated dts.cmake file: D:/Ankit/above/test2/build/zephyr/dts.cmake
+
+warning: FPU (defined at D:/Ankit/above/test2/zephyr/soc/st/stm32\stm32wbax\Kconfig.defconfig:35,
+D:/Ankit/above/test2/zephyr/soc/sifive/sifive_freedom\fu500\Kconfig.defconfig:25,
+D:/Ankit/above/test2/zephyr/soc/sifive/sifive_freedom\fu700\Kconfig.defconfig:25,
+D:/Ankit/above/test2/zephyr/soc/renesas/rzt2m/Kconfig.defconfig:12,
+D:/Ankit/above/test2/zephyr/soc/nxp/s32\s32k1\Kconfig.defconfig:15,
+D:/Ankit/above/test2/zephyr/soc/nxp/s32\s32k3\Kconfig.defconfig:15,
+D:/Ankit/above/test2/zephyr/soc/nxp/s32\s32ze\Kconfig.defconfig:12,
+D:/Ankit/above/test2/zephyr/soc/nxp/imx\imx6sx\Kconfig.defconfig.mcimx6x_m4:8, arch/Kconfig:974) was
+assigned the value 'y' but got the value 'n'. Check these unsatisfied dependencies: ((BT_STM32WBA &&
+SOC_SERIES_STM32WBAX && SOC_FAMILY_STM32) || (SOC_SERIES_SIFIVE_FREEDOM_FU500 &&
+SOC_FAMILY_SIFIVE_FREEDOM) || (SOC_SERIES_SIFIVE_FREEDOM_FU700 && SOC_FAMILY_SIFIVE_FREEDOM) ||
+SOC_RENESAS_RZT2M || (SOC_SERIES_S32K1 && SOC_FAMILY_NXP_S32) || (SOC_SERIES_S32K3 &&
+SOC_FAMILY_NXP_S32) || (SOC_SERIES_S32ZE && SOC_FAMILY_NXP_S32) || (SOC_MCIMX6X_M4 &&
+SOC_SERIES_IMX6SX && SOC_FAMILY_NXP_IMX) || CPU_HAS_FPU) (=n). See
+http://docs.zephyrproject.org/latest/kconfig.html#CONFIG_FPU and/or look up FPU in the
+menuconfig/guiconfig interface. The Application Development Primer, Setting Configuration Values,
+and Kconfig - Tips and Best Practices sections of the manual might be helpful too.
+
+
+warning: CORTEX_M_SYSTICK (defined at D:/Ankit/above/test2/zephyr/soc/st/stm32/Kconfig.defconfig:17,
+D:/Ankit/above/test2/zephyr/soc/silabs\silabs_s2\Kconfig.defconfig:18,
+D:/Ankit/above/test2/zephyr/soc/silabs/Kconfig.defconfig:13,
+D:/Ankit/above/test2/zephyr/soc/renesas/smartbond\da1469x\Kconfig.defconfig:9,
+D:/Ankit/above/test2/zephyr/soc/nxp/kinetis\ke1xf\Kconfig.defconfig:12,
+D:/Ankit/above/test2/zephyr/soc/nxp/kinetis\ke1xz\Kconfig.defconfig:12,
+D:/Ankit/above/test2/zephyr/soc/nxp/imxrt/Kconfig.defconfig:31,
+D:/Ankit/above/test2/zephyr/soc/nuvoton/npcx\npcx4\Kconfig.defconfig:11,
+D:/Ankit/above/test2/zephyr/soc/nuvoton/npcx\npcx7\Kconfig.defconfig:11,
+D:/Ankit/above/test2/zephyr/soc/nuvoton/npcx\npcx9\Kconfig.defconfig:11,
+D:/Ankit/above/test2/zephyr/soc/nordic\nrf54l\Kconfig.defconfig:12,
+D:/Ankit/above/test2/zephyr/soc/microchip/mec\mec15xx\Kconfig.defconfig.series:26,
+D:/Ankit/above/test2/zephyr/soc/microchip/mec\mec172x\Kconfig.defconfig.series:26,
+D:/Ankit/above/test2/zephyr/soc/microchip/mec\mec174x\Kconfig.defconfig.series:14,
+D:/Ankit/above/test2/zephyr/soc/microchip/mec\mec175x\Kconfig.defconfig.series:14,
+D:/Ankit/above/test2/zephyr/soc/microchip/mec\mech172x\Kconfig.defconfig.series:14,
+D:/Ankit/above/test2/zephyr/soc/infineon/cat1b\cyw20829\Kconfig.defconfig:12,
+D:/Ankit/above/test2/zephyr/soc/ambiq/Kconfig.defconfig:9, drivers/timer/Kconfig.cortex_m_systick:8)
+was assigned the value 'y' but got the value 'n'. Check these unsatisfied dependencies:
+(SOC_FAMILY_STM32 || SOC_FAMILY_SILABS_S2 || SOC_FAMILY_SILABS_S0 || SOC_FAMILY_SILABS_S1 ||
+SOC_FAMILY_SILABS_S2 || (SOC_SERIES_DA1469X && SOC_FAMILY_RENESAS_SMARTBOND) ||
+(SOC_SERIES_KINETIS_KE1XF && SOC_FAMILY_KINETIS) || (SOC_SERIES_KE1XZ && SOC_FAMILY_KINETIS) ||
+((SOC_SERIES_IMXRT10XX || SOC_SERIES_IMXRT11XX || SOC_SERIES_IMXRT118X) && SOC_FAMILY_NXP_IMXRT) ||
+(SOC_SERIES_NPCX4 && SOC_FAMILY_NPCX) || (SOC_SERIES_NPCX7 && SOC_FAMILY_NPCX) || (SOC_SERIES_NPCX9
+&& SOC_FAMILY_NPCX) || (ARM && SOC_SERIES_NRF54LX && SOC_FAMILY_NORDIC_NRF) || (!RTOS_TIMER &&
+SOC_SERIES_MEC15XX && SOC_FAMILY_MICROCHIP_MEC) || (!RTOS_TIMER && SOC_SERIES_MEC172X &&
+SOC_FAMILY_MICROCHIP_MEC) || (!RTOS_TIMER && SOC_SERIES_MEC174X && SOC_FAMILY_MICROCHIP_MEC) ||
+(!RTOS_TIMER && SOC_SERIES_MEC175X && SOC_FAMILY_MICROCHIP_MEC) || (!RTOS_TIMER &&
+SOC_SERIES_MECH172X && SOC_FAMILY_MICROCHIP_MEC) || (SOC_DIE_CYW20829 && SOC_FAMILY_INFINEON_CAT1B)
+|| SOC_FAMILY_AMBIQ || (CPU_CORTEX_M_HAS_SYSTICK && (DT_HAS_ARM_ARMV6M_SYSTICK_ENABLED ||
+DT_HAS_ARM_ARMV7M_SYSTICK_ENABLED || DT_HAS_ARM_ARMV8M_SYSTICK_ENABLED ||
+DT_HAS_ARM_ARMV8_1M_SYSTICK_ENABLED) && SYS_CLOCK_EXISTS)) (=n). See
+http://docs.zephyrproject.org/latest/kconfig.html#CONFIG_CORTEX_M_SYSTICK and/or look up
+CORTEX_M_SYSTICK in the menuconfig/guiconfig interface. The Application Development Primer, Setting
+Configuration Values, and Kconfig - Tips and Best Practices sections of the manual might be helpful
+too.
+
+
+warning: CACHE_MANAGEMENT (defined at
+D:/Ankit/above/test2/zephyr/soc/snps/nsim/arc_classic\em\Kconfig.defconfig.em:33,
+D:/Ankit/above/test2/zephyr/soc/snps/nsim/arc_classic\em\Kconfig.defconfig.em11d:33,
+D:/Ankit/above/test2/zephyr/soc/snps/nsim/arc_classic\em\Kconfig.defconfig.em7d_v22:33,
+D:/Ankit/above/test2/zephyr/soc/snps/nsim/arc_classic\hs\Kconfig.defconfig.hs:30,
+D:/Ankit/above/test2/zephyr/soc/snps/nsim/arc_classic\hs\Kconfig.defconfig.hs5x:20,
+D:/Ankit/above/test2/zephyr/soc/snps/nsim/arc_classic\hs\Kconfig.defconfig.hs5x_smp:20,
+D:/Ankit/above/test2/zephyr/soc/snps/nsim/arc_classic\hs\Kconfig.defconfig.hs6x:20,
+D:/Ankit/above/test2/zephyr/soc/snps/nsim/arc_classic\hs\Kconfig.defconfig.hs6x_smp:21,
+D:/Ankit/above/test2/zephyr/soc/snps/nsim/arc_classic\hs\Kconfig.defconfig.hs_mpuv6:36,
+D:/Ankit/above/test2/zephyr/soc/snps/nsim/arc_classic\hs\Kconfig.defconfig.hs_smp:28,
+D:/Ankit/above/test2/zephyr/soc/snps/nsim/arc_classic\sem\Kconfig.defconfig:33,
+D:/Ankit/above/test2/zephyr/soc/snps/nsim/arc_classic\vpx5\Kconfig.defconfig:30,
+D:/Ankit/above/test2/zephyr/soc/snps/emsk\Kconfig.defconfig.em11d:29,
+D:/Ankit/above/test2/zephyr/soc/snps/emsk\Kconfig.defconfig.em7d:38,
+D:/Ankit/above/test2/zephyr/soc/snps/emsdp\Kconfig.defconfig.em11d:24,
+D:/Ankit/above/test2/zephyr/soc/snps/emsdp\Kconfig.defconfig.em4:24,
+D:/Ankit/above/test2/zephyr/soc/snps/emsdp\Kconfig.defconfig.em5d:24,
+D:/Ankit/above/test2/zephyr/soc/snps/emsdp\Kconfig.defconfig.em6:24,
+D:/Ankit/above/test2/zephyr/soc/snps/emsdp\Kconfig.defconfig.em7d:24,
+D:/Ankit/above/test2/zephyr/soc/snps/emsdp\Kconfig.defconfig.em7d_esp:24,
+D:/Ankit/above/test2/zephyr/soc/snps/emsdp\Kconfig.defconfig.em9d:24,
+D:/Ankit/above/test2/zephyr/soc/renesas/ra\ra8d1\Kconfig.defconfig:27,
+D:/Ankit/above/test2/zephyr/soc/nxp/s32\s32k3\Kconfig.defconfig:28,
+D:/Ankit/above/test2/zephyr/soc/nxp/s32\s32ze\Kconfig.defconfig:21,
+D:/Ankit/above/test2/zephyr/soc/nxp/imxrt\imxrt5xx\Kconfig.defconfig:102,
+D:/Ankit/above/test2/zephyr/soc/nxp/imxrt/Kconfig.defconfig:94,
+D:/Ankit/above/test2/zephyr/soc/nxp/imx\imx8\Kconfig.defconfig:20,
+D:/Ankit/above/test2/zephyr/soc/nxp/imx\imx8m\Kconfig.defconfig.mimx8ml8_adsp:20,
+D:/Ankit/above/test2/zephyr/soc/nxp/imx\imx8ulp\Kconfig.defconfig:20,
+D:/Ankit/above/test2/zephyr/soc/nxp/imx\imx8x\Kconfig.defconfig:20,
+D:/Ankit/above/test2/zephyr/soc/nxp/imx\imx9\imx95\Kconfig.defconfig.mimx95.m7:20,
+D:/Ankit/above/test2/zephyr/soc/mediatek/mt8xxx/Kconfig.defconfig:38,
+D:/Ankit/above/test2/zephyr/soc/intel/intel_adsp/Kconfig.defconfig:44,
+D:/Ankit/above/test2/zephyr/soc/amd/acp_6_0/Kconfig.defconfig:8, arch/Kconfig:1040) was assigned the
+value 'y' but got the value 'n'. Check these unsatisfied dependencies: ((SOC_NSIM_EM &&
+SOC_SERIES_NSIM_EM && SOC_FAMILY_NSIM_ARC_CLASSIC) || (SOC_NSIM_EM11D && SOC_SERIES_NSIM_EM &&
+SOC_FAMILY_NSIM_ARC_CLASSIC) || (SOC_NSIM_EM7D_V22 && SOC_SERIES_NSIM_EM &&
+SOC_FAMILY_NSIM_ARC_CLASSIC) || (SOC_NSIM_HS && SOC_SERIES_NSIM_HS && SOC_FAMILY_NSIM_ARC_CLASSIC)
+|| (SOC_NSIM_HS5X && SOC_SERIES_NSIM_HS && SOC_FAMILY_NSIM_ARC_CLASSIC) || (SOC_NSIM_HS5X_SMP &&
+SOC_SERIES_NSIM_HS && SOC_FAMILY_NSIM_ARC_CLASSIC) || (SOC_NSIM_HS6X && SOC_SERIES_NSIM_HS &&
+SOC_FAMILY_NSIM_ARC_CLASSIC) || (SOC_NSIM_HS6X_SMP && SOC_SERIES_NSIM_HS &&
+SOC_FAMILY_NSIM_ARC_CLASSIC) || (SOC_NSIM_HS_MPUV6 && SOC_SERIES_NSIM_HS &&
+SOC_FAMILY_NSIM_ARC_CLASSIC) || (SOC_NSIM_HS_SMP && SOC_SERIES_NSIM_HS &&
+SOC_FAMILY_NSIM_ARC_CLASSIC) || (SOC_NSIM_SEM && SOC_FAMILY_NSIM_ARC_CLASSIC) || (SOC_NSIM_VPX5 &&
+SOC_FAMILY_NSIM_ARC_CLASSIC) || (SOC_EMSK_EM11D && SOC_EMSK) || (SOC_EMSK_EM7D && SOC_EMSK) ||
+(SOC_EMSDP_EM11D && SOC_ARC_EMSDP) || (SOC_EMSDP_EM4 && SOC_ARC_EMSDP) || (SOC_EMSDP_EM5D &&
+SOC_ARC_EMSDP) || (SOC_EMSDP_EM6 && SOC_ARC_EMSDP) || (SOC_EMSDP_EM7D && SOC_ARC_EMSDP) ||
+(SOC_EMSDP_EM7D_ESP && SOC_ARC_EMSDP) || (SOC_EMSDP_EM9D && SOC_ARC_EMSDP) || (SOC_SERIES_RA8D1 &&
+SOC_FAMILY_RENESAS_RA) || (SOC_SERIES_S32K3 && SOC_FAMILY_NXP_S32) || (SOC_SERIES_S32ZE &&
+SOC_FAMILY_NXP_S32) || (SOC_MIMXRT595S_F1 && SOC_FAMILY_NXP_IMXRT) || (CPU_CORTEX_M7 &&
+(SOC_SERIES_IMXRT10XX || SOC_SERIES_IMXRT11XX || SOC_SERIES_IMXRT118X) && SOC_FAMILY_NXP_IMXRT) ||
+(SOC_MIMX8QM6_ADSP && SOC_SERIES_IMX8 && SOC_FAMILY_NXP_IMX) || (SOC_MIMX8ML8_ADSP &&
+SOC_SERIES_IMX8M && SOC_SERIES_IMX8M && SOC_FAMILY_NXP_IMX) || (SOC_MIMX8UD7_ADSP &&
+SOC_SERIES_IMX8ULP && SOC_FAMILY_NXP_IMX) || (SOC_MIMX8QX6_ADSP && SOC_SERIES_IMX8X &&
+SOC_FAMILY_NXP_IMX) || (SOC_MIMX9596_M7 && SOC_SERIES_IMX9 && SOC_SERIES_IMX9 && SOC_FAMILY_NXP_IMX)
+|| SOC_FAMILY_MTK || SOC_FAMILY_INTEL_ADSP || SOC_ACP_6_0 || DCACHE || ICACHE) (=n). See
+http://docs.zephyrproject.org/latest/kconfig.html#CONFIG_CACHE_MANAGEMENT and/or look up
+CACHE_MANAGEMENT in the menuconfig/guiconfig interface. The Application Development Primer, Setting
+Configuration Values, and Kconfig - Tips and Best Practices sections of the manual might be helpful
+too.
+
+
+warning: SE_SERVICE_INIT_PRIORITY (defined at
+D:/Ankit/above/test2/modules/hal/alif/zephyr\../se_services/zephyr/Kconfig:8) was assigned the value
+'1' but got the value ''. Check these unsatisfied dependencies: ARM_MHUV2 (=n). See
+http://docs.zephyrproject.org/latest/kconfig.html#CONFIG_SE_SERVICE_INIT_PRIORITY and/or look up
+SE_SERVICE_INIT_PRIORITY in the menuconfig/guiconfig interface. The Application Development Primer,
+Setting Configuration Values, and Kconfig - Tips and Best Practices sections of the manual might be
+helpful too.
+
+
+warning: ALIF_ROM_LC3_CODEC (defined at
+D:/Ankit/above/test2/modules/hal/alif/zephyr\../lc3/zephyr/Kconfig:3) was assigned the value 'y' but
+got the value 'n'. Check these unsatisfied dependencies: HAS_ALIF_BLE_ROM_IMAGE (=n). See
+http://docs.zephyrproject.org/latest/kconfig.html#CONFIG_ALIF_ROM_LC3_CODEC and/or look up
+ALIF_ROM_LC3_CODEC in the menuconfig/guiconfig interface. The Application Development Primer,
+Setting Configuration Values, and Kconfig - Tips and Best Practices sections of the manual might be
+helpful too.
+
+
+warning: USE_SEGGER_RTT (defined at D:/Ankit/above/test2/zephyr/modules/segger/Kconfig:12,
+modules\segger\Kconfig:12) was assigned the value 'y' but got the value 'n'. Check these unsatisfied
+dependencies: (HAS_SEGGER_RTT || (HAS_SEGGER_RTT && 0)) (=n). See
+http://docs.zephyrproject.org/latest/kconfig.html#CONFIG_USE_SEGGER_RTT and/or look up
+USE_SEGGER_RTT in the menuconfig/guiconfig interface. The Application Development Primer, Setting
+Configuration Values, and Kconfig - Tips and Best Practices sections of the manual might be helpful
+too.
+
+
+warning: SOC_SUPPORT_ARM_MHUV2 (defined at
+D:/Ankit/above/test2/zephyr/soc/alif/ensemble\common\Kconfig:27,
+D:/Ankit/above/test2/zephyr/soc/alif/balletto\common\Kconfig:74) was assigned the value 'y' but got
+the value 'n'. Check these unsatisfied dependencies: ((SOC_FAMILY_ENSEMBLE && SOC_FAMILY_ENSEMBLE)
+|| ((SOC_FAMILY_ENSEMBLE || SOC_FAMILY_BALLETTO) && SOC_FAMILY_BALLETTO)) (=n). See
+http://docs.zephyrproject.org/latest/kconfig.html#CONFIG_SOC_SUPPORT_ARM_MHUV2 and/or look up
+SOC_SUPPORT_ARM_MHUV2 in the menuconfig/guiconfig interface. The Application Development Primer,
+Setting Configuration Values, and Kconfig - Tips and Best Practices sections of the manual might be
+helpful too.
+
+
+warning: RUNTIME_NMI (defined at D:/Ankit/above/test2/zephyr/arch/arm\core/Kconfig:159,
+D:/Ankit/above/test2/zephyr/arch/arm\core\cortex_a_r/Kconfig:70,
+D:/Ankit/above/test2/zephyr/arch/arm\core\cortex_a_r/Kconfig:219) was assigned the value 'y' but got
+the value 'n'. Check these unsatisfied dependencies: (ARM || (CPU_AARCH32_CORTEX_A && ARM) ||
+(CPU_AARCH32_CORTEX_R && ARM)) (=n). See
+http://docs.zephyrproject.org/latest/kconfig.html#CONFIG_RUNTIME_NMI and/or look up RUNTIME_NMI in
+the menuconfig/guiconfig interface. The Application Development Primer, Setting Configuration
+Values, and Kconfig - Tips and Best Practices sections of the manual might be helpful too.
+
+
+warning: RTT_CONSOLE (defined at drivers/console/Kconfig:130) was assigned the value 'y' but got the
+value 'n'. Check these unsatisfied dependencies: USE_SEGGER_RTT (=n). See
+http://docs.zephyrproject.org/latest/kconfig.html#CONFIG_RTT_CONSOLE and/or look up RTT_CONSOLE in
+the menuconfig/guiconfig interface. The Application Development Primer, Setting Configuration
+Values, and Kconfig - Tips and Best Practices sections of the manual might be helpful too.
+
+
+warning: The choice symbol FP_HARDABI (defined at
+D:/Ankit/above/test2/zephyr/arch/arm\core/Kconfig:281) was selected (set =y), but no symbol ended up
+as the choice selection. See http://docs.zephyrproject.org/latest/kconfig.html#CONFIG_FP_HARDABI
+and/or look up FP_HARDABI in the menuconfig/guiconfig interface. The Application Development Primer,
+Setting Configuration Values, and Kconfig - Tips and Best Practices sections of the manual might be
+helpful too.
+
+Parsing D:/Ankit/above/test2/zephyr/Kconfig
+Loaded configuration 'D:/Ankit/above/test2/minimil/boards/minimil/minimil_b1_dk/minimil_b1_dk_ab1c1f4m51820hh0_rtss_he_defconfig'
+Merged configuration 'D:/Ankit/above/test2/minimil/samples/lc3/lc3_codec/prj.conf'
+Configuration saved to 'D:/Ankit/above/test2/build/zephyr/.config'
+Kconfig header saved to 'D:/Ankit/above/test2/build/zephyr/include/generated/zephyr/autoconf.h'
+CMake Error at D:/Ankit/above/test2/zephyr/cmake/modules/arch_v2.cmake:36 (message):
+  ARCH not defined.  Check that BOARD=minimil_b1_dk, is selecting an
+  appropriate SoC in Kconfig, SoC=, and that the SoC is selecting the correct
+  architecture.
+Call Stack (most recent call first):
+  D:/Ankit/above/test2/zephyr/cmake/modules/zephyr_default.cmake:133 (include)
+  D:/Ankit/above/test2/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)
+  D:/Ankit/above/test2/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)
+  CMakeLists.txt:10 (find_package)
+
+
+-- Configuring incomplete, errors occurred!
+FATAL ERROR: command exited with status 1: 'C:\Users\ankit\AppData\Local\Programs\Python\Python313\Scripts\cmake.EXE' -DWEST_PYTHON=C:/Users/ankit/zephyrproject/.venv/Scripts/python.exe '-BD:\Ankit\above\test2\build' -GNinja -DBOARD=minimil_b1_dk/ab1c1f4m51820hh0/rtss_he '-SD:\Ankit\above\test2\minimil\samples\lc3\lc3_codec'

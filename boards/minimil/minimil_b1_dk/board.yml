@@ -1,6 +1,6 @@
 board:
   name: minimil_b1_dk
-  full_name: minimil b1 DK
+  full_name: Minimil b1 DK
   vendor: minimil
   socs:
   - name: ab1c1f4m51820hh0
