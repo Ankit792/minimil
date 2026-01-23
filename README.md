@@ -409,27 +409,9 @@ west --version
 west boards | findstr -E "(term|minimil)"
 ```
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## License
-
-This project follows the Alif Semiconductor Software License Agreement. See `alif/License.txt` for details.
-
 ## Related Projects
 
 - [Alif SDK](https://github.com/alifsemi/sdk-alif) - Base Alif Semiconductor Zephyr SDK
 - [Zephyr RTOS](https://github.com/zephyrproject-rtos/zephyr) - Real-time operating system
 - [West](https://docs.zephyrproject.org/latest/develop/west/index.html) - Zephyr's meta-tool
 
-## Support
-
-For issues related to:
-- **Custom boards**: Open an issue in this repository
-- **Alif SDK**: Check [Alif SDK documentation](https://github.com/alifsemi/sdk-alif)
-- **Zephyr RTOS**: Check [Zephyr documentation](https://docs.zephyrproject.org/)
